@@ -1,0 +1,109 @@
+.warning-body {
+    background-color: #1f1f1f;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+@font-face {
+  font-family: "Impact";
+  src: url('/fonts/impact/impact.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "IMFellFrenchCanon";
+  src: url('/fonts/IM_Fell_French_Canon/IMFellFrenchCanon-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Host_Grotesk";
+  src: url('/fonts/Host_Grotesk/HostGrotesk-VariableFont_wght.ttf') format('truetype');
+}
+
+h1 {
+  font-family: Impact, "Arial Black", sans-serif;
+}
+
+h2, h3, h4 {
+  font-family: 'IMFellFrenchCanon', "Arial Black", sans-serif;
+}
+
+p {
+  font-family: 'Host_Grotesk', "Arial Black", sans-serif;
+}
+
+.warning-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.warning-box {
+    background-color: #FFFFFF;
+    color: #1f1f1f;
+    padding: 40px;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.warning-box h1 {
+    font-size: clamp(30px, 5vw, 50px);
+    margin-bottom: 20px;
+    color: #DD3B3C;
+}
+
+.warning-box p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.warning-box .advice {
+    font-style: italic;
+    color: #777;
+    margin-top: 20px;
+}
+
+.warning-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.btn-enter {
+    background-color: #DD3B3C;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+.btn-enter:hover {
+    background-color: #b32e2f;
+}
+
+.btn-leave {
+    color: #777;
+    text-decoration: underline;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.btn-leave:hover {
+    color: #1f1f1f;
+}
+
+@media (max-width: 480px) {
+    .warning-box {
+        padding: 20px;
+    }
+}
