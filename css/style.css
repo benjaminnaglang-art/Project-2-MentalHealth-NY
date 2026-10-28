@@ -125,17 +125,16 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
     width: 100%;
     max-width: 1200px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 .content-text {
     flex: 1;
     max-width: 60%;
-    padding: 20px;
+    padding: 5px;
 }
 
 .content-image {
@@ -273,7 +272,7 @@ main {
 
     .content {
         flex-direction: column; 
-        text-align: center;
+        text-align: left;
     }
 
     .content-text {
