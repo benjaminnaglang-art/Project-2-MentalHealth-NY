@@ -158,11 +158,10 @@ main {
 
 .galleri-container-carousel {
     display: flex;
-    justify-content: flex-start;
-    gap: 50px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    overflow: hidden;
     padding-bottom: 12px;
 }
 
@@ -170,7 +169,6 @@ main {
     display: block;
     text-decoration: none;
     flex: 0 0 250px;
-    scroll-snap-align: start;
 }
 
 .galleri-box {
@@ -300,5 +298,21 @@ main {
 
     .more-info .social-links {
         justify-content: center;
+    }
+
+    .galleri-container-carousel {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .galleri-link {
+        flex: 0 0 220px;
+    }
+
+    .galleri-container-carousel::-webkit-scrollbar { 
+        display: none; 
     }
 }
