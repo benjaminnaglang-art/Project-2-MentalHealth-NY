@@ -158,7 +158,7 @@ main {
 
 .galleri-container-carousel {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 50px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
