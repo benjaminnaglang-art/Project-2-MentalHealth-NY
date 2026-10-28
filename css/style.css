@@ -107,6 +107,7 @@ p { font-family: 'Host_Grotesk', "Arial Black", sans-serif; }
 }
 
 .hero-content p {
+    font-weight: bold;
     font-size: 20px;
     line-height: 1.5;
     max-width: 600px;
@@ -124,10 +125,11 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
     width: 100%;
     max-width: 1200px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .content-text {
