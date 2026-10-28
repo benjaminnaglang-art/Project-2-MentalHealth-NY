@@ -311,8 +311,4 @@ main {
     .galleri-link {
         flex: 0 0 220px;
     }
-
-    .galleri-container-carousel::-webkit-scrollbar { 
-        display: none; 
-    }
 }
