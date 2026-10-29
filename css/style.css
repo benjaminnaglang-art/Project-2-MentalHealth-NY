@@ -30,17 +30,27 @@ p { font-family: 'Host_Grotesk', "Arial Black", sans-serif; }
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 0 1.5rem;
     height: 70px;
     background-color: #3B3B3B;
     font-family: 'Host_Grotesk', sans-serif;
 }
 
+.nav-brand {
+    display: flex;
+    align-items: center;
+}
+
+.logo-nav {
+    height: 40px;
+}
+
 .hamburger {
     display: none;
     cursor: pointer;
 }
+
 
 .hamburger-icon {
     width: 40px;
@@ -72,21 +82,10 @@ p { font-family: 'Host_Grotesk', "Arial Black", sans-serif; }
     transition: color 0.2s ease;
 }
 
-.navbar_link::after {
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    width: 0;
-    height: 2px;
-    background-color: #DD3B3C;
-    transition: width 0.25s ease;
-}
-
 .navbar_link:hover { 
     color: #DD3B3C;
     text-decoration: underline; 
 }
-.navbar_link:hover::after { width: 100%; }
 
 .hero {
     aspect-ratio: 16 / 7;
@@ -257,6 +256,25 @@ main {
     width: auto;
 }
 
+.ptsd-button {
+    display: inline-block;
+    background-color: #DD3B3C;
+    color: #FFFFFF;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-family: 'Host_Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.ptsd-button:hover {
+    background-color: #B32D2E;
+    text-decoration: underline;
+}
+
+
+
 @media screen and (max-width: 768px) {
     .navbar {
         justify-content: flex-end;
@@ -266,7 +284,7 @@ main {
         display: block;
     }
 
-    .navbar__menu {
+    .navbar_menu {
         display: none;
     }
 
