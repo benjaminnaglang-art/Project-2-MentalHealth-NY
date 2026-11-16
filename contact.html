@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/5db69ef900.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <img src="img/logo.png" alt="NAGLANG logo" class="logo-nav">
+        </div>
+
+        <button id="bars" class="hamburger" aria-label="open navigation" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        
+        <ul class="navbar_menu">
+            <li><a href="index.html" class="navbar_link">HOME</a></li>
+            <li><a href="ptsd.html" class="navbar_link">TIPS AGAINST PTSD</a></li>
+            <li><a href="about.html" class="navbar_link">MY JOURNEY TO PEACE</a></li>
+            <li><a href="support.html" class="navbar_link">FIND YOUR SUPPORT</a></li>
+            <li><a href="contact.html" class="navbar_link">CONTACT</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+       <section class="kontaktform">
+    <h1>GET IN TOUCH</h1>
+    <p class="kontakt-tekst">Fill out the form to get in touch. Feel free to DM on social media too.</p>
+    <div class="kontakt-social-links">
+        <a href="https://www.instagram.com/naglang.mp3/" target="_blank"><img src="img/icons/instagram.png" class="socialmedia" alt="Instagram"></a>
+        <a href="#" target="_blank"><img src="img/icons/facebook.png" class="socialmedia" alt="Facebook"></a>
+    </div>
+    <form>
+        <div class="form-group">
+            <label for="navn">Name</label>
+            <input id="navn" type="text" placeholder="Your full name" required="">
+        </div>
+        
+        <div class="form-group">
+            <label for="adresse">Address</label>
+            <input id="adresse" type="text" placeholder="City, Country">
+        </div>
+        
+        <div class="form-group">
+            <label for="telefon">Phone number</label>
+            <input id="telefon" type="tel" placeholder="+45 00 00 00 00">
+        </div>
+        
+        <div class="form-group">
+            <label for="mail">E-mail</label>
+            <input id="mail" type="email" placeholder="email@example.com" required="">
+        </div>
+            
+        <div class="form-group">
+            <label for="besked">Message</label>
+            <textarea name="besked" id="besked" rows="5" placeholder="How can I help you?"></textarea>
+        </div>
+            
+        <fieldset class="form-fieldset">
+            <legend>Can I contact you by phone?</legend>
+            <div class="radio-group">
+                <div class="radio-option">
+                    <input id="yes" type="radio" value="yes" name="contact">
+                    <label for="yes">Yes</label>
+                </div>
+                <div class="radio-option">
+                    <input id="no" type="radio" value="no" name="contact">
+                    <label for="no">No</label>
+                </div>
+            </div>
+        </fieldset>
+            
+        <input type="submit" name="submit" value="Send Message">
+    </form>
+</section>
+
+        <section class="galleri-section">
+            <h2>Explore More</h2>
+            <div class="galleri-container-carousel">
+                <a href="ptsd.html" aria-label="Tips against PTSD" class="galleri-link">
+                    <div class="galleri-box galleri-box-img1">
+                        <h1>TIPS AGAINST PTSD</h1>
+                    </div>
+                </a>
+                <a href="about.html" aria-label="My journey to peace" class="galleri-link">
+                    <div class="galleri-box galleri-box-img2">
+                        <h1>MY JOURNEY TO PEACE</h1>
+                    </div>
+                </a>
+                <a href="support.html" aria-label="Find your support" class="galleri-link">
+                    <div class="galleri-box galleri-box-img3">
+                        <h1>FIND YOUR SUPPORT</h1>
+                    </div>
+                </a>
+                <a href="contact.html" aria-label="Questions and contact" class="galleri-link">
+                    <div class="galleri-box galleri-box-img4">
+                        <h1>GET IN TOUCH</h1>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="more-info">
+            <h4>Contact me</h4>
+            <p>Phone: <a href="tel:+4512345678">+45 12345678</a></p>
+            <p>Email: <a href="mailto:naglang@gmail.com">naglang@gmail.com</a></p>
+            <p>Address: <a href="https://www.google.com/maps" target="_blank">Eksempelgade 1, 1234 Byen</a></p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/naglang.mp3/" target="_blank"><img src="img/icons/instagram.png" class="socialmedia" alt="Instagram"></a>
+                <a href="#" target="_blank"><img src="img/icons/facebook.png" class="socialmedia" alt="Facebook"></a>
+            </div>
+        </div>
+        
+        <div class="footer-end">
+            <img src="img/logo.png" alt="Logo" class="footer-logo">
+            <p class="footer-copy">&copy; 2026 NAGLANG</p>
+        </div>
+    </footer>
+</body>
+</html>
