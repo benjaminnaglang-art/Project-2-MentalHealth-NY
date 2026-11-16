@@ -98,7 +98,7 @@ p { font-family: 'Host_Grotesk', "Arial Black", sans-serif; }
     background-size: cover;
     background-position: center 50%;
     padding: 2em;
-    margin: 20px auto;
+    margin: 20px;
     width: 96%;
 }
 
@@ -281,9 +281,6 @@ main {
 
 .tips-grid {
     width: 60%;
-    list-style: none;
-    margin: 0 auto;
-    padding: 0 1rem;
     display: grid;
     gap: 1.5rem;
 }
@@ -313,7 +310,6 @@ main {
 .ptsd-banner {
     width: 40%;
     height: auto;
-    padding: 10px;
 }
 
 .content-ptsd {
@@ -376,11 +372,10 @@ main {
 /*Kontaktform*/
 .kontaktform {
     background-color: #1f1f1f;
-    padding: 2.5rem;
-    width: 90%;
-    max-width: 600px;
-    margin: 3rem auto;
+    width: 60%;
     text-align: center;
+    padding: 20px;
+    margin: 20px;
 }
 
 .kontaktform h1 {
@@ -532,15 +527,17 @@ input[type=submit]:active {
     .content {
         flex-direction: column; 
         text-align: left;
+        align-items: center;
     }
 
     .content-text {
         max-width: 100%;
         padding: 10px;
+        font-size: 1.3rem;
     }
 
     .content-image {
-        width: 80%;
+        width: 100%;
     }
 
     .galleri-link {
@@ -560,6 +557,10 @@ input[type=submit]:active {
         justify-content: center;
     }
 
+    .galleri-section{
+        font-size: 1.3rem;
+    }
+
     .galleri-container-carousel {
         justify-content: flex-start;
         flex-wrap: nowrap;
@@ -573,20 +574,24 @@ input[type=submit]:active {
     }
 
     .content-ptsd {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3rem;
     }
 
     .ptsd-banner {
-    width: 100%;
-    height: auto;
+        width: 100%;
+        height: auto;
     }
 
     .tips-grid {
         width: 100%;
-        padding: 0 1rem;
+    }
+
+    .tip-card p, h1{
+        font-size: 1.3rem;
     }
 
     .content-text-ptsd {
@@ -600,8 +605,8 @@ input[type=submit]:active {
     }
 
     .kontaktform {
-        width: 95%;
-        padding: 1.5rem;
+        width: 100%;
+        padding: 10px;
     }
 
     .hero-about-me {
@@ -614,10 +619,18 @@ input[type=submit]:active {
     .about-me-text {
         text-align: left;
         padding: 10px;
+        font-size: 1.3rem;
     }
 
     .about-me-text h1 {
         text-align: center;
-        font-size: 3.5rem;
+        font-size: 5rem;
+    }
+
+    .content-about-me{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
     }
 }
